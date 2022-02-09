@@ -1,0 +1,323 @@
+<html lang="en">
+<head>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="icon" 
+        type="image/png"
+        href="favicon.png">
+    <title>Underbyte Music</title>
+</head>
+<body>
+    
+    <!-- Portrait -->
+    <img src="assets/portrait.png" class="portrait">
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+    </div>
+
+    <!-- Signature -->
+    <img class="signature" src="assets/11_underbyte_green.png">
+
+    <!-- Links -->
+    <div class="links">
+        <a href="https://open.spotify.com/artist/61nwnZe9FPeyceiEWf1J44" class="links-items-odd">Spotify</a>
+        <a href="https://music.youtube.com/channel/UCh_V8NCycuhUIWBUkmdjh2g" class="links-items-even">YouTube Music</a>
+        <a href="https://music.apple.com/us/artist/underbyte/1541862140" class="links-items-odd">Apple Music</a>
+        <a href="https://soundcloud.com/underbyte-blc" class="links-items-even">SoundCloud</a>
+        <a href="https://www.instagram.com/underbyteblc/" class="links-items-odd">Instagram</a>
+        <a href="https://facebook.com/ecmonstersma" class="links-items-even">Facebook</a>
+    </div>
+
+    <div class="icons">
+        <a class="icons-items" href="https://open.spotify.com/artist/61nwnZe9FPeyceiEWf1J44"><img src="assets/icons/spotify.svg"></a>
+        <a class="icons-items" href="https://music.youtube.com/channel/UCh_V8NCycuhUIWBUkmdjh2g"><img src="assets/icons/youtube.svg"></a>
+        <a class="icons-items" href="https://music.apple.com/us/artist/underbyte/1541862140"><img src="assets/icons/apple-music.svg"></a>
+        <a class="icons-items" href="https://soundcloud.com/underbyte-blc"><img src="assets/icons/soundcloud.svg"></a>
+        <a class="icons-items" href="https://www.instagram.com/underbyteblc/"><img src="assets/icons/instagram.svg"></a>
+        <a class="icons-items" href="https://facebook.com/ecmonstersma"><img src="assets/icons/facebook.svg"></a>
+    </div>
+
+
+    <h2>RECORD LABEL</h2>
+    <div id="label">
+        <a href="https://eastcoastmonsters.com">
+            <img src="assets/eastcoastmonsters.png">
+        </a>
+    </div>
+
+    <div class="bottom-text">
+        For business inquiries, please contact<br><a class="email" href="mailto:dcolon123@gmail.com">dcolon123@gmail.com</a>
+    </div>
+
+    <div class="sitesbysamchambers">
+        <a class="samchambers" href="https://sitesbysam.github.io">sitesbysam</a>
+    </div>
+ 
+</body>
+
+<style>
+    @font-face {
+        font-family: 'Name';
+        src: url(assets/fonts/name/VictorianText.ttf);
+    }
+    @font-face {
+        font-family: 'Links';
+        src: url(assets/fonts/links/sedgwick-ave-display.regular.ttf);
+    }
+
+    body {
+        background: rgb(117,117,117);
+        background: radial-gradient(circle, rgba(117,117,117,1) 0%, rgba(129,129,129,1) 16%, rgba(167,165,165,1) 33%, rgba(190,190,190,1) 50%, rgba(217,215,215,1) 64%, rgba(255,255,255,1) 77%);
+        /* background: url("assets/background.png"); */
+        background-size: contain;
+        color: rgb(0, 0, 0);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .portrait {
+        /* border-radius: 50%; */
+        /* border: 1px solid rgba(24, 45, 161, 0.938); */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        height: auto;
+        max-width: 175px;
+        box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+    }
+
+    .name {
+        font-family: 'Name';
+        font-size: 50px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .signature {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        max-width: 275px;
+    }
+
+    .links {
+        padding-bottom: 25px;
+    } .links-headers {
+        font-family: 'OldeEnglish';
+        font-weight: lighter;
+        color: blanchedalmond;
+        font-size: 50px;
+        text-align: center;
+    } .links-items-odd {
+        box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+        display: block;
+        font-family: 'Links';
+        text-align: center;
+        font-size: 30px;
+        margin-top: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        /* border: 5px solid rgb(0, 0, 0); */
+        max-width: 75%;
+        height: 30px;
+        color: rgb(255, 255, 255);
+        transition: 1500ms; 
+        text-decoration: none;
+        /* background: url(assets/background-links.jpg); */
+        background: rgb(19,71,60);
+        background: radial-gradient(circle, rgba(19,71,60,1) 0%, rgba(94,119,114,1) 100%);
+        }
+        .links-items-even {
+        display: block;
+        font-family: 'Links';
+        text-align: center;
+        font-size: 30px;
+        margin-top: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        /* border: 5px solid rgb(0, 0, 0); */
+        max-width: 75%;
+        height: 30px;
+        color: rgb(255, 255, 255);
+        transition: 1500ms; 
+        text-decoration: none;
+        /* background: url(assets/background-links.jpg); */
+        box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+        background: rgb(19,71,60);
+        background: radial-gradient(circle, rgba(19,71,60,1) 0%, rgba(94,119,114,1) 100%);
+        } .links-items-icon {
+        max-width: 25%;
+        max-height: 25%;
+    } .links-items-odd:hover {
+        transform: skewX(-10deg);
+        color: #000;
+        background: rgba(255, 255, 255, 0.623);
+    } .links-items-even:hover {
+        transform: skewX(10deg);
+        color: #000;
+        background: rgba(255, 255, 255, 0.623);
+    }
+
+    .icons {
+        padding-bottom: 10px;
+        display: flex;
+        width: 350px;
+        max-height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    } .icons-items {
+        display: block;
+        align-items: center;
+        width: 200px;
+        padding-left: 2px;
+        padding-right: 2px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* max-width: 30%;
+        max-height: 30%; */
+        text-decoration: none;
+    } .icons-items img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    h2 {
+        text-align: center;
+        font-family: 'Links';
+        font-size: 30px;
+    }
+
+    #label { 
+        display: block;
+        box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+        background: radial-gradient(circle, rgba(19,71,60,1) 0%, rgba(94,119,114,1) 100%);
+        max-width: 350px;
+        height: 125px;
+        transition: 1500ms;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    } #label:hover {
+        background: rgb(0, 0, 0);
+    } #label a img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #label p {
+        padding-top: 10px;
+    }
+
+
+    /* #email-button {
+        font-size: 24px;
+        background: url(assets/truefact-ufo_bad.png);
+    } */
+
+    .bottom-text {
+        text-align: center;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }   p.bottom-text {
+        font-size: 14px;
+    }   .email {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .sitesbysamchambers {
+        text-align: center;
+        color: rgb(221, 221, 221);
+        padding-bottom: 15px;
+    }   .samchambers {
+        color: rgb(82, 82, 82);
+        text-decoration: underline;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+</style>
+
+</html>
